@@ -1,0 +1,18 @@
+# questions
+project_name:
+    type: str
+    help: What is your project name?
+
+project_description:
+    type: str
+    help: What is your Python project description?
+
+module_name:
+    type: str
+    help: What is your Python module name?
+
+authors_name:
+    type: str
+
+authors_email:
+    type: str
