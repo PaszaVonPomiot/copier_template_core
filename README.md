@@ -1,12 +1,27 @@
 # Copier Templates
-
 ## Installation
-- Update pip - `python.exe -m pip install --upgrade pip`
-- Install pipx - `pip install --user pipx`
-- Update PATH - `.\pipx.exe ensurepath`
-- Restart shell
-- Install Copier - `pipx install copier`
 
+- Install Scoop 
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+- Install pipx
+```
+scoop install pipx
+pipx ensurepath
+```
+
+- Restart shell
+- Install Copier
+```
+pipx install copier
+```
+
+## Usage
+```
+copier copy <template_folder> <destination_folder>
+```
 
 
 ## Templates
@@ -44,6 +59,5 @@
         - FastAPI service
         - Postgres service
     - Entrypoint scripts
-    
-# Docs
-https://copier.readthedocs.io/en/stable/
+  
+
