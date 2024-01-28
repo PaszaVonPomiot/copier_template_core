@@ -21,6 +21,10 @@ pipx install copier
 ## Usage
 ```
 copier copy <template_folder> <destination_folder>
+
+copier copy https://github.com/PaszaVonPomiot/copier_template_core.git my_new_project
+
+copier copy gh:PaszaVonPomiot/copier_template_core my_new_projectu --vcs-ref develop
 ```
 
 
