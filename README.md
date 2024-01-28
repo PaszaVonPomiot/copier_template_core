@@ -1,7 +1,7 @@
 # Copier Templates
 ## Installation
 
-- Install Scoop 
+- Install Scoop
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
@@ -25,6 +25,9 @@ copier copy <template_folder> <destination_folder>
 
 
 ## Templates
+
+https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
+
 - **Core** - Minimal
     - pyproject.toml
         - Project metadata
@@ -59,5 +62,5 @@ copier copy <template_folder> <destination_folder>
         - FastAPI service
         - Postgres service
     - Entrypoint scripts
-  
+
 
