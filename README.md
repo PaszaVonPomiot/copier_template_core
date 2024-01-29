@@ -24,12 +24,10 @@ copier copy <template_folder> <destination_folder>
 
 copier copy https://github.com/PaszaVonPomiot/copier_template_core.git my_new_project
 
-copier copy gh:PaszaVonPomiot/copier_template_core my_new_projectu --vcs-ref develop
+copier copy gh:PaszaVonPomiot/copier_template_core my_new_project --vcs-ref develop
 ```
 
-
 ## Templates
-
 https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
 
 - **Core** - Minimal
@@ -66,5 +64,3 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
         - FastAPI service
         - Postgres service
     - Entrypoint scripts
-
-
