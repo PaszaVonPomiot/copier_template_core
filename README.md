@@ -85,6 +85,7 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
     ```
     (Invoke-WebRequest -Uri https://pdm-project.org/install-pdm.py -UseBasicParsing).Content | python
     pdm self update
+    pdm config check_update false
     pdm init
     pdm lock
     ```
