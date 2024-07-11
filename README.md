@@ -19,12 +19,13 @@ pipx install copier
 ```
 
 ## Usage
+- Create project from template
 ```
 copier copy <template_folder> <destination_folder>
 
-copier copy https://github.com/PaszaVonPomiot/copier_template_core.git my_new_project
+copier copy https://github.com/PaszaVonPomiot/copier_template_core.git project-name
 
-copier copy gh:PaszaVonPomiot/copier_template_core my_new_project --vcs-ref develop
+copier copy gh:PaszaVonPomiot/copier_template_core project-name --vcs-ref develop
 ```
 
 ## Templates
@@ -34,7 +35,6 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
     - pyproject.toml
         - Project metadata
         - Development dependencies
-        - Black settings
         - Mypy settings
         - Ruff settings
     - Git settings
@@ -64,3 +64,19 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
         - FastAPI service
         - Postgres service
     - Entrypoint scripts
+
+
+## Optional
+- Configure git aliases on Windows
+```
+git config --local include.path ../.gitconfig
+```
+
+## Template maintenance
+- Update pre-commit repos
+```
+pre-commit autoupdate
+```
+- Update `.vscode/` extension versions
+- Update `pyproject.toml` dependencies versions
+- Push new template to git

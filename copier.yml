@@ -7,8 +7,8 @@ _message_after_copy: Project "{{ project_name }}" has been created in folder "{{
 # questions
 project_name:
     type: str
-    help: Project name
-    default: example-project
+    help: Project name eg. crypto, crypto-api, crypto-gui. This will be the name of project folder and git repository.
+    default: example-api
 
 project_description:
     type: str
@@ -17,13 +17,13 @@ project_description:
 
 module_name:
     type: str
-    help: Module name eg. example_module
-    default: example_module
+    help: Module name eg. crypto, crypto_api, crypto_gui. This will be the name of the main module folder.
+    default: example_api
 
 authors_name:
     type: str
     help: Author's name
-    default: Undefined
+    default: PaszaVonPomiot
 
 authors_email:
     type: str
