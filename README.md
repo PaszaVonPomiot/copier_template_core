@@ -75,11 +75,7 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
     git init
     ```
 
-1. Install pre-commit globally and install pre-commit script
-    ```
-    pip install pre-commit
-    pre-commit install
-    ```
+
 
 1. Install, Update, Init PDM and create lock file
     ```
@@ -87,7 +83,12 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
     pdm self update
     pdm config check_update false
     pdm init
-    pdm lock
+    pdm install
+    ```
+
+1. Install pre-commit script (pre-commit itself was installed in previous step)
+    ```
+    pre-commit install
     ```
 
 1. Setup git repository
