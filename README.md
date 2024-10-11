@@ -31,7 +31,7 @@ copier copy gh:PaszaVonPomiot/copier_template_core project-name --vcs-ref develo
 ## Templates
 https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
 
-- **Core** - Minimal
+- **Core** - Minimal application
     - pyproject.toml
         - Project metadata
         - Development dependencies
