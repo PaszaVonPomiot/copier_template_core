@@ -68,14 +68,12 @@ https://github.com/PaszaVonPomiot?tab=repositories&q=copier_template
 ## Development environment
 1. Generate local project from Copier
 
-1. Open project in VS Code and import extensions using `Extension Import/Export`
+1. Open project in VS Code and install extensions from `.vscode/extensions.txt`
 
 1. Initialize local git repository
     ```
     git init
     ```
-
-
 
 1. Install, Update, Init PDM and create lock file
     ```
