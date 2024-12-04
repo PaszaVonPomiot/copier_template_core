@@ -41,7 +41,9 @@ ignore = [
     "UP015",  # Unnecessary open() mode parameters
 ]
 fixable = ["ALL"]
-unfixable = []
+unfixable = [
+    "F401", # imported but unused
+]
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = [
