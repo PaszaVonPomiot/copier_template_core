@@ -18,6 +18,11 @@ python_version = "3.12"
 exclude = ["tests/", "temp/"]
 
 [tool.ruff]
+line-length = 89
+target-version = "py312"
+exclude = [".git", ".venv/*"]
+
+[tool.ruff.lint]
 select = ["ALL"]
 ignore = [
     "D",      # pydocstyle
@@ -36,12 +41,11 @@ ignore = [
     "UP015",  # Unnecessary open() mode parameters
 ]
 fixable = ["ALL"]
-unfixable = []
-line-length = 89
-target-version = "py312"
-exclude = [".git", ".venv/*"]
+unfixable = [
+    "F401", # imported but unused
+]
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "__init__.py" = [
     "F401", # imported but unused
 ]
@@ -52,13 +56,14 @@ exclude = [".git", ".venv/*"]
     "PLR2004", # Magic value used in comparison, consider replacing 4 with a constant variable
     "S311",    # Standard pseudo-random generators are not suitable for cryptographic purposes
     "PLR0913", # Too many arguments to function call (8 > 5)
+    "ANN201",  # Missing return type annotation for public function
 ]
 "*/docs/*" = [
     "E501", # Line too long
 ]
 
 [tool.pdm.dev-dependencies]
-test = ["pytest>=8.2.2"]
-lint = ["mypy>=1.10.1", "ruff>=0.5.1"]
+test = ["pytest"]
+lint = ["mypy", "ruff"]
 version = []
-git = ["pre-commit>=3.7.1"]
+git = ["pre-commit"]
