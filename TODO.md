@@ -1,0 +1,2 @@
+-   update pdm to to uv
+-   Upodate according to https://github.com/iloveitaly/python-starter-template
