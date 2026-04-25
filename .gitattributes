@@ -1,6 +1,11 @@
-# CRLF for Windows scripts
+# Later match overrides an earlier match
 *.bat text eol=crlf
+*.cmd text eol=crlf
 *.ps1 text eol=crlf
 
-# LF for all other text files
-* text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.json text eol=lf

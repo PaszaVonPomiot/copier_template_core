@@ -8,12 +8,8 @@ readme = "README.md"
 license = { text = "GPL-3.0-only" }
 dependencies = []
 
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
-
 [tool.mypy]
-# plugins = "pydantic.mypy"
+plugins = "pydantic.mypy"
 python_version = "3.12"
 exclude = ["tests/", "temp/"]
 
@@ -61,9 +57,3 @@ unfixable = [
 "*/docs/*" = [
     "E501", # Line too long
 ]
-
-[tool.pdm.dev-dependencies]
-test = ["pytest"]
-lint = ["mypy", "ruff"]
-version = []
-git = ["pre-commit"]
